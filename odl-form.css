@@ -1,0 +1,28 @@
+/* CSS declarations go here */
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+
+}
+
+h1 {
+	font-size: 1.5em;
+	background-color: #798c1f;
+	color: white;
+	padding: 3em;
+	margin: 0;
+	line-height: 1.5em;
+	font-weight: 200;
+}
+
+input {
+	font-size: 1.5em;
+}
+
+a, a:visited, a:active{
+	color:#798c1f;
+}
