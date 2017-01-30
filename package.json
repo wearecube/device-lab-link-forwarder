@@ -1,0 +1,25 @@
+{
+  "name": "odlb-link-forwarder",
+  "version": "1.0.0",
+  "description": "Whenenver you are in a Open Device Lab and you want to test an webapplication or website, you have the problem, that you have enter your URL on all the devices. We thought, that this is super inconvenient. So to help you with that",
+  "main": "forwarder.js",
+  "dependencies": {
+    "babel-runtime": "^6.22.0",
+    "core-js": "^2.4.1",
+    "regenerator-runtime": "^0.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearecube/device-lab-link-forwarder.git"
+  },
+  "author": "roland studer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wearecube/device-lab-link-forwarder/issues"
+  },
+  "homepage": "https://github.com/wearecube/device-lab-link-forwarder#readme"
+}
