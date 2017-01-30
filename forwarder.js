@@ -6,7 +6,7 @@ if (Meteor.isClient) {
       before: function(){
         var url = Urls.findOne().url;
         if (!(typeof url == "undefined")) {
-          window.location.replace(url);
+          setTimeout(function() { window.location.replace(url); }, 2000);
         }
         else {
           document.write("No forward url defined defined");
