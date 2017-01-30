@@ -24,20 +24,15 @@
 
 <template name="home">
   <h1>Share this url to all devices in the Open Device Lab Bern!</h1>
-  {{> url}}
 
   <form action="#">
   	<label for="url">URL</label><br>
-    <input name="url" type="url" value="http://" placeholder="url">
+    <input name="url" type="url" value="{{url}}" placeholder="url">
   </form>
 
   <p>
     <a href="/forward">Point your devices to this link</a>
   </p>
-</template>
-
-<template name="url">
-  <h2><a href="{{url}}">{{url}}</a></h2>
 </template>
 
 <template name="forward">

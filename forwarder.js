@@ -6,6 +6,7 @@ if (Meteor.isClient) {
       before: function(){
         var url = Urls.findOne().url;
         if (!(typeof url == "undefined")) {
+          document.write("forwarding");
           setTimeout(function() { window.location.replace(url); }, 2000);
         }
         else {
@@ -18,15 +19,7 @@ if (Meteor.isClient) {
     this.render('home');
   });
 
-  // Router.route('/forward', function(){
-  //   this.render('home');
-  //   // before: function(){
-  //   //   var url = Urls.findOne().url;
-  //   //   window.location.replace(url);
-  //   // };
-  // });
-
-  Template.url.helpers({
+  Template.home.helpers({
     url: function () {
       return Urls.findOne().url;
     }
@@ -44,6 +37,7 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
-    Urls.insert({});
+    Urls.remove({});
+    Urls.insert({url: "http://"});
   });
 }
